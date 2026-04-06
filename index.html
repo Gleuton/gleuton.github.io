@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gleuton Dutra | Desenvolvedor Sênior</title>
+  <meta name="description" content="Portfólio e currículo técnico de Gleuton Dutra, desenvolvedor sênior especialista em PHP, arquitetura de software e DDD." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --bg-soft: #111c35;
+      --card: #17223e;
+      --text: #e7ecf6;
+      --muted: #a6b3c9;
+      --accent: #60a5fa;
+      --accent-strong: #3b82f6;
+      --border: rgba(148, 163, 184, 0.22);
+      --shadow: 0 14px 30px rgba(2, 6, 23, 0.32);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Manrope", "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 15% -10%, rgba(96, 165, 250, 0.18), transparent 40%),
+        radial-gradient(circle at 100% 0%, rgba(20, 184, 166, 0.12), transparent 34%),
+        linear-gradient(180deg, var(--bg-soft) 0%, var(--bg) 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 28px 20px 72px;
+    }
+
+    .hero, .section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 32px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    h1, h2, h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      line-height: 1.25;
+    }
+
+    h1 {
+      font-size: clamp(2.1rem, 4vw, 2.8rem);
+      letter-spacing: -0.01em;
+    }
+
+    h2 {
+      font-size: clamp(1.45rem, 2.3vw, 1.85rem);
+      letter-spacing: -0.01em;
+    }
+
+    p {
+      color: var(--muted);
+      margin-top: 0;
+    }
+
+    .headline {
+      color: var(--accent);
+      font-weight: 800;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 0.78rem;
+    }
+
+    .hero h2 {
+      color: #dbe7ff;
+      font-size: 1.2rem;
+      margin-bottom: 14px;
+    }
+
+    .cta {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      border: 1px solid var(--border);
+      color: var(--text);
+      background: rgba(255,255,255,0.04);
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      background: rgba(255,255,255,0.08);
+    }
+
+    .btn.primary {
+      background: var(--accent);
+      color: #081426;
+      border: none;
+    }
+
+    .btn.primary:hover {
+      background: var(--accent-strong);
+      color: #eef6ff;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: rgba(8, 16, 36, 0.18);
+    }
+
+    .card p + p {
+      margin-top: 10px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 6px 10px;
+      margin: 4px;
+      border-radius: 999px;
+      background: rgba(96, 165, 250, 0.18);
+      color: #cfe3ff;
+      font-size: 0.9rem;
+      border: 1px solid rgba(96, 165, 250, 0.25);
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      margin-top: 24px;
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 18px 14px 42px;
+      }
+
+      .hero, .section {
+        padding: 24px;
+        border-radius: 18px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="hero">
+      <h1>Gleuton Dutra</h1>
+      <h2>Desenvolvedor de Software Sênior | PHP | Arquitetura | DDD | Performance</h2>
+      <p>
+        Mais de 10 anos construindo e evoluindo sistemas críticos em ambientes corporativos,
+        financeiros e governamentais. Forte atuação em PHP, arquitetura limpa, Domain-Driven Design,
+        investigação de incidentes, performance e estabilidade em produção.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="https://github.com/gleuton" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/gleutondutra/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Experiência e impacto</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Sistemas críticos</h3>
+          <p>Atuação em motores de crédito, pós-liquidação, sistemas governamentais e plataformas de alta disponibilidade.</p>
+        </div>
+        <div class="card">
+          <h3>Arquitetura</h3>
+          <p>Aplicação prática de DDD, Clean Architecture, separação entre domínio e infraestrutura e modelagem orientada ao negócio.</p>
+        </div>
+        <div class="card">
+          <h3>Performance</h3>
+          <p>Refatoração de fluxos críticos, otimização de queries, redução de gargalos e suporte a incidentes em produção.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Cases de sucesso</h2>
+      <p>Casos reais de engenharia, performance e evolução arquitetural em ambientes críticos.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Otimização de relatórios contábeis</h3>
+          <p>Reestruturei a geração de relatórios utilizando Hyperf e corrotinas, reduzindo o tempo de processamento de <strong>12 horas para menos de 45 minutos</strong>, com impacto direto na eficiência operacional e tomada de decisão.</p>
+        </div>
+        <div class="card">
+          <h3>Migração do legado para microserviços</h3>
+          <p>Atuei na modernização arquitetural em sistemas legados, extraindo responsabilidades críticas para serviços independentes, reduzindo acoplamento e melhorando escalabilidade, manutenção e autonomia de deploy.</p>
+        </div>
+        <div class="card">
+          <h3>Liderança técnica e qualidade</h3>
+          <p>Como líder técnico, promovi grupos de estudo sobre Clean Code, refatoração e testes automatizados, fortalecendo a maturidade técnica do time.</p>
+          <p>Implementei processos que elevaram a cobertura média de testes para <strong>95% em todos os projetos.</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Especialidades</h2>
+      <span class="tag">PHP</span>
+      <span class="tag">Laravel / Lumen</span>
+      <span class="tag">Slim</span>
+      <span class="tag">Symfony</span>
+      <span class="tag">Hyperf</span>
+      <span class="tag">Clean Code</span>
+      <span class="tag">DDD</span>
+      <span class="tag">Clean Architecture</span>
+      <span class="tag">Docker</span>
+      <span class="tag">PostgreSQL</span>
+      <span class="tag">Vue.js</span>
+      <span class="tag">Performance</span>
+    </section>
+
+    <section class="section">
+      <h2>Educação e especialização contínua</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>MBA em Arquitetura de Software</h3>
+          <p>Full Cycle • em andamento</p>
+          <p>Foco em DDD estratégico, arquitetura resiliente, microsserviços e sistemas evolutivos.</p>
+        </div>
+
+        <div class="card">
+          <h3>Especialização em Arquitetura de Software Distribuído</h3>
+          <p>PUC Minas • concluído</p>
+          <p>Ênfase em sistemas distribuídos, integração e desenho arquitetural.</p>
+        </div>
+
+        <div class="card">
+          <h3>Análise e Desenvolvimento de Sistemas</h3>
+          <p>UDF Centro Universitário • concluído</p>
+          <p>Base sólida em engenharia de software, algoritmos e desenvolvimento de sistemas.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 Gleuton Dutra
+  </div>
+</body>
+</html>
