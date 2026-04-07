@@ -73,9 +73,17 @@ p {
   font-size: 0.78rem;
 }
 
-.hero h2 {
+.hero-name {
+  font-size: clamp(2.1rem, 4vw, 2.8rem);
+  letter-spacing: -0.01em;
+  margin-bottom: 10px;
+}
+
+.hero-role {
   color: #dbe7ff;
   font-size: 1.2rem;
+  line-height: 1.25;
+  margin-top: 0;
   margin-bottom: 14px;
 }
 
